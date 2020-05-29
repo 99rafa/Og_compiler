@@ -1,0 +1,66 @@
+<sequence_node size='1'>
+  <function_definition_node name='og' qualifier='public' type ='integer'>
+    <arguments>
+    </arguments>
+    <body>
+      <block_node>
+        <declarations>
+          <sequence_node size='2'>
+            <variable_declaration_node qualifier='private' type ='double'>
+              <identifiers>
+                < id = 'r' >
+              </identifiers>
+              <initializer>
+                <integer_node>61</integer_node>
+              </initializer>
+            </variable_declaration_node>
+            <variable_declaration_node qualifier='private' type ='pointer'>
+              <identifiers>
+                < id = 'p' >
+              </identifiers>
+              <initializer>
+                <nullptr_node>
+                </nullptr_node>
+              </initializer>
+            </variable_declaration_node>
+          </sequence_node>
+        </declarations>
+        <instructions>
+          <sequence_node size='3'>
+            <evaluation_node>
+              <assignment_node>
+              <variable_node>p</variable_node>
+                  <address_node>
+                      <variable_node>r</variable_node>
+                  </address_node>
+              </assignment_node>
+            </evaluation_node>
+            <print_node>
+              <sequence_node size='1'>
+                <rvalue_node>
+                    <left_index_node>
+                      <base>
+                        <rvalue_node>
+                            <variable_node>p</variable_node>
+                        </rvalue_node>
+                      </base>
+                      <index>
+                        <integer_node>0</integer_node>
+                      </index>
+                    </left_index_node>
+                </rvalue_node>
+              </sequence_node>
+            </print_node>
+            <return_node>
+              <tuple_node>
+                <sequence_node size='1'>
+                  <integer_node>0</integer_node>
+                </sequence_node>
+              </tuple_node>
+            </return_node>
+          </sequence_node>
+        </instructions>
+      </block_node>
+    </body>
+  </function_definition_node>
+</sequence_node>
