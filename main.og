@@ -1,0 +1,8 @@
+public int og() {
+
+auto a = 2.1;
+
+
+write a;
+return 0;
+}

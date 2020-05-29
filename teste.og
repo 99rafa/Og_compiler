@@ -1,0 +1,6 @@
+int ix=0;
+public int og() {
+for ix =0; ix < 10; ix = ix + 1 do write ix;
+return 0;
+}
+
